@@ -14,8 +14,12 @@ gem 'on_strum-healthcheck'
 
 And then execute:
 
-    $ bundle
+```bash
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install on_strum-healthcheck
+```bash
+gem install on_strum-healthcheck
+```
