@@ -12,15 +12,15 @@ To have an access for `OnStrum::Logs` you must configure it first as in the exam
 require 'on_strum/logs'
 
 OnStrum::Logs.configure do |config|
-  # Optional parameter. Ability to define static fields in the logger document root.
-  # It is equal to empty hash by default.
+  # Optional parameter. Ability to define static fields in the logger
+  # document root. It is equal to empty hash by default.
   config.root_fields = {
     service_name: 'My Great Application',
     service_version: '1.42.0'
   }
 
-  # Optional parameter. The colorized structured log in STDOUT. It could be useful
-  # for debug mode.
+  # Optional parameter. The colorized structured log in STDOUT.
+  # It could be useful for debug mode. It is equal to nil by default.
   config.detailed_formatter = true
 
   # Optional parameter. You can use your custom formatter insted of built-in.
@@ -43,12 +43,12 @@ OnStrum::Logs.configure do |config|
   # It is equal to :context by default.
   config.field_name_context = :log_context
 
-  # Optional parameter. You can override log exception message builtin attribute key.
-  # It is equal to :message by default.
+  # Optional parameter. You can override log exception message
+  # builtin attribute key. It is equal to :message by default.
   config.field_name_exception_message = :log_exception_message
 
-  # Optional parameter. You can override log exception stack trace builtin attribute key.
-  # It is equal to :stack_trace by default.
+  # Optional parameter. You can override log exception stack trace
+  # builtin attribute key. It is equal to :stack_trace by default.
   config.field_name_exception_stack_trace = :log_exception_stack_trace
 end
 ```

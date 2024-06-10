@@ -14,8 +14,7 @@ require 'on_strum/healthcheck'
 OnStrum::Healthcheck.configure do |config|
   # Optional parameter. The list of services that can be triggered
   # during running probes. Each value of this hash should be callable
-  # and return boolean.
-  # It is equal to empty hash by default.
+  # and return boolean. It is equal to empty hash by default.
   config.services = {
     postgres: -> { true },
     redis: -> { true },
